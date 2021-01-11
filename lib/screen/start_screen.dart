@@ -1,5 +1,6 @@
 import 'package:flutter/cupertino.dart';
 import 'package:flutter/material.dart';
+import 'package:lesson1/screen/materialdesign_screen.dart';
 
 class StartScreen extends StatelessWidget {
   static const routeName = '/startScreen';
@@ -42,9 +43,9 @@ class StartScreen extends StatelessWidget {
         children: [
           RaisedButton(
             onPressed: () {
-              print('Menu 1');
+              Navigator.pushNamed(context, MaterialDesignScreen.routeName);
             },
-            child: Text('Menu 1'),
+            child: Text('Material Design Demo'),
           ),
           RaisedButton(
             onPressed: () {

@@ -5,10 +5,21 @@ class MaterialDesignScreen extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
     return Scaffold(
-      appBar: AppBar(
-        title: Text('Material Design Style'),
-      ),
-      body: Text('Material'),
-    );
+        appBar: AppBar(
+          title: Text('Material Design Style'),
+        ),
+        body: Column(
+          children: [
+            Text(
+              'One',
+              style: TextStyle(
+                color: Colors.yellow,
+                fontSize: 24,
+                fontFamily: 'Couirier New',
+              ),
+            ),
+            Text('Two'),
+          ],
+        ));
   }
 }

@@ -50,7 +50,7 @@ class StartScreen extends StatelessWidget {
             onPressed: () => Navigator.pushNamed(context, ImageScreen.routeName),
             child: Text('Image Demo'),
           ),
-          Text('Menu 3'),
+          Text('ThirdMenu'),
         ],
       ),
       floatingActionButton: FloatingActionButton(

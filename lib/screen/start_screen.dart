@@ -1,6 +1,7 @@
 import 'package:flutter/cupertino.dart';
 import 'package:flutter/material.dart';
 import 'package:lesson1/screen/button_screen.dart';
+import 'package:lesson1/screen/font_screen.dart';
 import 'package:lesson1/screen/image_screen.dart';
 import 'package:lesson1/screen/materialdesign_screen.dart';
 
@@ -54,6 +55,10 @@ class StartScreen extends StatelessWidget {
           RaisedButton(
             onPressed: () => Navigator.pushNamed(context, ButtonScreen.routeName),
             child: Text('Button Demo'),
+          ),
+          RaisedButton(
+            onPressed: () => Navigator.pushNamed(context, FontScreen.routeName),
+            child: Text('Custom Font Demo'),
           ),
         ],
       ),

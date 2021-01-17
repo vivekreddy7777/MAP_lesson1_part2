@@ -17,9 +17,12 @@ class Lesson1App extends StatelessWidget {
       theme: ThemeData(
           brightness: Brightness.dark,
           primaryColor: Colors.red[700],
+          fontFamily: 'IndieFlower',
           textTheme: TextTheme(
-            headline1: TextStyle(color: Colors.yellow[900], fontSize: 30.0),
-          )),
+              button: TextStyle(
+            fontFamily: 'Lobster',
+            fontSize: 28.0,
+          ))),
       initialRoute: StartScreen.routeName,
       routes: {
         StartScreen.routeName: (context) => StartScreen(),

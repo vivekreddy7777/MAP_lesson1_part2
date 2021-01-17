@@ -4,6 +4,7 @@ import 'package:lesson1/screen/button_screen.dart';
 import 'package:lesson1/screen/font_screen.dart';
 import 'package:lesson1/screen/image_screen.dart';
 import 'package:lesson1/screen/materialdesign_screen.dart';
+import 'package:lesson1/screen/rowcol_screen.dart';
 
 class StartScreen extends StatelessWidget {
   static const routeName = '/startScreen';
@@ -69,6 +70,13 @@ class StartScreen extends StatelessWidget {
             onPressed: () => Navigator.pushNamed(context, FontScreen.routeName),
             child: Text(
               'Custom Font Demo',
+              style: Theme.of(context).textTheme.button,
+            ),
+          ),
+          RaisedButton(
+            onPressed: () => Navigator.pushNamed(context, RowColScreen.routeName),
+            child: Text(
+              'Row/Column Layout Demo',
               style: Theme.of(context).textTheme.button,
             ),
           ),

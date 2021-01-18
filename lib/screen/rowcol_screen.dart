@@ -15,6 +15,19 @@ class RowColScreen extends StatelessWidget {
           child: Column(crossAxisAlignment: CrossAxisAlignment.center,
               //mainAxisAlignment: MainAxisAlignment.center,
               children: [
+                Stack(
+                  children: [
+                    Container(
+                      height: 200.0,
+                      width: 500.0,
+                      color: Colors.teal[800],
+                    ),
+                    Positioned(
+                        bottom: 10.0,
+                        right: 10.0,
+                        child: IconButton(icon: Icon(Icons.alarm), onPressed: null))
+                  ],
+                ),
                 Container(
                   color: Colors.teal[900],
                   child: Text(
@@ -54,6 +67,15 @@ class RowColScreen extends StatelessWidget {
                         style: Theme.of(context).textTheme.headline3,
                       ),
                     ),
+                  ],
+                ),
+                Row(
+                  children: [
+                    Expanded(
+                      child: Image.network(
+                          'https://images-na.ssl-images-amazon.com/images/I/51HylLbOAJL._SX404_BO1,204,203,200_.jpg'),
+                    ),
+                    Expanded(child: Image.asset('images/aeroplane.jpg')),
                   ],
                 ),
                 Container(
